@@ -1,7 +1,7 @@
 # amiga-gcc-2.95.3-math
 Set of math libraries for old m68k-amigaos GCC compiler.
 
-This repository contains a set static math libraries to use with GCC 2.95.3 compiler for m68k-amigaos architecture, especially when linking with `-nostdlib`.
+This repository contains a set static math libraries to use with GCC 2.95.3 compiler for m68k-amigaos architecture, especially when linking with `-nostdlib`. Libraries in the set are wrappers calling functions of system shared libraries.
 
 ## libminteger
 
