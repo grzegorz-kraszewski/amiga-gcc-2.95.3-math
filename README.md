@@ -9,19 +9,19 @@ Provides 32 bit wide integer multiplication and division for 68000. This process
 
 ## libmfloat
 
-Provides set of functions used internally by GCC to implement basic single precision floating point arithmetic. These functions are redirected to `mathieeesingbas.library`, so code linked is very small. `mathieeesingbas.library` detects FPU in the system at start and uses FPU code if available. Additionally `libmfloat` provides `fabsf()`, `ceilf()` and `floorf()`. The library assumes that global `MathIeeeSingBasBase` is declared and initialized.
+Provides set of functions used internally by GCC to implement basic single precision floating point arithmetic. These functions are redirected to `mathieeesingbas.library`, so code linked is very small. `mathieeesingbas.library` detects FPU in the system at start and uses FPU if available. Additionally `libmfloat` provides `fabsf()`, `ceilf()` and `floorf()`. The library assumes that global `MathIeeeSingBasBase` is declared and initialized.
 
 ## libmtransfloat
 
-Provides standard set of transcendental and number manipulation functions for single precision floats. These functions are redirected to `mathieeesingtrans.library`, so code linked is very small. `mathieeesingtrans.library` detects FPU in the system at start and uses FPU code if available. Functions provided are: `sinf()`, `cosf()`, `expf()`, `logf()`, `log10f()`. The library assumes that global `MathIeeeSingTransBase` is declared and initialized.
+Provides standard set of transcendental and number manipulation functions for single precision floats. These functions are redirected to `mathieeesingtrans.library`, so code linked is very small. `mathieeesingtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sinf()`, `cosf()`, `expf()`, `logf()`, `log10f()`. The library assumes that global `MathIeeeSingTransBase` is declared and initialized.
 
 ## libmdouble
 
-Provides set of functions used internally by GCC to implement basic double precision floating point arithmetic. These functions are redirected to `mathieeedoubbas.library`, so code linked is very small. `mathieeedoubbas.library` detects FPU in the system at start and uses FPU code if available. Additionally `libmdouble` provides `fabs()`, `ceil()` and `floor()`. The library assumes that global `MathIeeeDoubBasBase` is declared and initialized.
+Provides set of functions used internally by GCC to implement basic double precision floating point arithmetic. These functions are redirected to `mathieeedoubbas.library`, so code linked is very small. `mathieeedoubbas.library` detects FPU in the system at start and uses FPU if available. Additionally `libmdouble` provides `fabs()`, `ceil()` and `floor()`. The library assumes that global `MathIeeeDoubBasBase` is declared and initialized.
 
 ## libmtransdouble
 
-Provides standard set of transcendental and number manipulation functions for double precision floats. These functions are redirected to `mathieeedoubtrans.library`, so code linked is very small. `mathieeedoubtrans.library` detects FPU in the system at start and uses FPU code if available. Functions provided are: `sin()`, `cos()`, `exp()`, `log()`, `log10()`. The library assumes that global `MathIeeeDoubTransBase` is declared and initialized.
+Provides standard set of transcendental and number manipulation functions for double precision floats. These functions are redirected to `mathieeedoubtrans.library`, so code linked is very small. `mathieeedoubtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sin()`, `cos()`, `exp()`, `log()`, `log10()`. The library assumes that global `MathIeeeDoubTransBase` is declared and initialized.
 
 ## library flavors
 
