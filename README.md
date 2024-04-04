@@ -13,7 +13,7 @@ Provides set of functions used internally by GCC to implement basic single preci
 
 ## libmtransfloat
 
-Provides standard set of transcendental and number manipulation functions for single precision floats. These functions are redirected to `mathieeesingtrans.library`, so code linked is very small. `mathieeesingtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sinf()`, `cosf()`, `tanf()`, `sinhf()`, `coshf()`, `tanhf()`, `asinf()`, `acosf()`, `atanf()`, `expf()`, `logf()`, `log10f()`, `sqrtf()` and `powf()`. Additionally function `float sincosf(float*, float)` is provided, which computes sine and cosine of the second argument. Sine is the return value, cosine is stored at address passed as the first argument. The library assumes that global `MathIeeeSingTransBase` is declared and initialized.
+Provides standard set of transcendental functions for single precision floats. These functions are redirected to `mathieeesingtrans.library`, so code linked is very small. `mathieeesingtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sinf()`, `cosf()`, `tanf()`, `sinhf()`, `coshf()`, `tanhf()`, `asinf()`, `acosf()`, `atanf()`, `expf()`, `logf()`, `log10f()`, `sqrtf()` and `powf()`. Additionally function `float sincosf(float*, float)` is provided, which computes sine and cosine of the second argument. Sine is the return value, cosine is stored at address passed as the first argument. The library assumes that global `MathIeeeSingTransBase` is declared and initialized.
 
 ## libmdouble
 
@@ -21,7 +21,7 @@ Provides set of functions used internally by GCC to implement basic double preci
 
 ## libmtransdouble
 
-Provides standard set of transcendental and number manipulation functions for double precision floats. These functions are redirected to `mathieeedoubtrans.library`, so code linked is very small. `mathieeedoubtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sin()`, `cos()`, `tan()`, `sinh()`, `cosh()`, `tanh()`, `asin()`, `acos()`, `atan()`, `exp()`, `log()`, `log10()`, `sqrt()` and `pow()`. Additionally function `double sincos(double*, double)` is provided, which computes sine and cosine of the second argument. Sine is the return value, cosine is stored at address passed as the first argument. This library also provides two GCC internal functions for conversion between `float` and `double`. The library assumes that global `MathIeeeDoubTransBase` is declared and initialized.
+Provides standard set of transcendental functions for double precision floats. These functions are redirected to `mathieeedoubtrans.library`, so code linked is very small. `mathieeedoubtrans.library` detects FPU in the system at start and uses FPU if available. Functions provided are: `sin()`, `cos()`, `tan()`, `sinh()`, `cosh()`, `tanh()`, `asin()`, `acos()`, `atan()`, `exp()`, `log()`, `log10()`, `sqrt()` and `pow()`. Additionally function `double sincos(double*, double)` is provided, which computes sine and cosine of the second argument. Sine is the return value, cosine is stored at address passed as the first argument. This library also provides two GCC internal functions for conversion between `float` and `double`. The library assumes that global `MathIeeeDoubTransBase` is declared and initialized.
 
 ## library flavors
 
