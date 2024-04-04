@@ -1,15 +1,12 @@
-/*---------------*/
-/* libmathsingle */
-/*---------------*/
-
-#include <exec/types.h>
-#include <exec/libraries.h>
+/*-----------*/
+/* libmfloat */
+/*-----------*/
 
 extern struct Library *MathIeeeSingBasBase;
 
-__stdargs FLOAT __negsf2(FLOAT x)
+__stdargs float __negsf2(float x)
 {
-	register FLOAT r asm("d0");
+	register float r asm("d0");
 
 	asm("move.l %1,d0; movea.l %2,a6; jsr -60(a6);" :
 		"=r"(r) : "m"(x), "m"(MathIeeeSingBasBase) :

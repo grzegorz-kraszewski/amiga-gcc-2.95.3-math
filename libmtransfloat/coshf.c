@@ -2,8 +2,6 @@
 /* libmtransfloat */
 /*----------------*/
 
-#include <exec/libraries.h>
-
 extern struct Library *MathIeeeSingTransBase;
 
 __stdargs float coshf(float x)

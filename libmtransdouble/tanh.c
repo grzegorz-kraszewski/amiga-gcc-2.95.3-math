@@ -1,8 +1,6 @@
-/*------------------*/
-/* libmathdoubtrans */
-/*------------------*/
-
-#include <exec/libraries.h>
+/*-----------------*/
+/* libmtransdouble */
+/*-----------------*/
 
 extern struct Library *MathIeeeDoubTransBase;
 

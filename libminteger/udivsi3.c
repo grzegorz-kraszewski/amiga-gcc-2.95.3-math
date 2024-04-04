@@ -2,8 +2,6 @@
 /* libminteger */
 /*-------------*/
 
-#include <exec/libraries.h>
-
 extern struct Library *UtilityBase;
 
 /* According to documentation UDivMod32() preserves A0 and A1. */

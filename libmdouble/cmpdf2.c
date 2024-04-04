@@ -1,15 +1,12 @@
-/*----------------*/
-/* libmathdoubbas */
-/*----------------*/
-
-#include <exec/types.h>
-#include <exec/libraries.h>
+/*------------*/
+/* libmdouble */
+/*------------*/
 
 extern struct Library *MathIeeeDoubBasBase;
 
-__stdargs LONG __cmpdf2(DOUBLE x, DOUBLE y)
+__stdargs long __cmpdf2(double x, double y)
 {
-	register LONG r asm("d0");
+	register long r asm("d0");
 
 	asm("move.l 16(sp),d0; move.l 20(sp),d1; move.l 24(sp),d2; move.l 28(sp),d3; movea.l %1,a6; jsr -42(a6);" :
 		"=r"(r) : "m"(MathIeeeDoubBasBase) :

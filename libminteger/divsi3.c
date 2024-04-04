@@ -2,9 +2,6 @@
 /* libminteger */
 /*-------------*/
 
-#include <exec/types.h>
-#include <exec/libraries.h>
-
 extern struct Library *UtilityBase;
 
 /* According to documentation SDivMod32() preserves A0 and A1. */

@@ -1,16 +1,12 @@
-/*---------------*/
-/* libmathsingle */
-/* fbaserel      */
-/*---------------*/
-
-#include <exec/types.h>
-#include <exec/libraries.h>
+/*-----------*/
+/* libmfloat */
+/*-----------*/
 
 extern struct Library *MathIeeeSingBasBase;
 
-__stdargs LONG __fixsfsi(FLOAT x)
+__stdargs long __fixsfsi(float x)
 {
-	register LONG r asm("d0");
+	register long r asm("d0");
 
 	asm("move.l %1,d0; movea.l %2,a6; jsr -30(a6);" :
 		"=r"(r) : "m"(x), "m"(MathIeeeSingBasBase) :
